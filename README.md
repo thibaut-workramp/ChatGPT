@@ -3,13 +3,23 @@ The goal of this repository is to build a prototype Api that take a filter on a 
 
 Example of API ability expected: <br>
 query: <br>
-"Show me all conference rooms that were used more than 40% of the time in December 2022" <br>
+"One of the top tourist destinations in the United States, San Francisco is known for its steep rolling hills and eclectic mix of architecture across varied neighborhoods, as well as its cool summers, fog, and landmarks, including the Golden Gate Bridge, cable cars, Alcatraz, and Chinatown and Mission districts.[47] The city is home to a number of educational and cultural institutions, such as the University of California, San Francisco, the University of San Francisco, San Francisco State University, the San Francisco Conservatory of Music, the de Young Museum, the San Francisco Museum of Modern Art, the San Francisco Symphony, the San Francisco Ballet, the San Francisco Opera, the SFJAZZ Center, and the California Academy of Sciences. Two professional sports teams, MLB\'s San Francisco Giants, and the NBA\'s Golden State Warriors, all play their home games within San Francisco proper. Transport to, from, and within San Francisco is also among the most robust in the nation, with a main international airport flying to over 125 destinations and a light rail and bus network in tandem with the BART and Caltrain systems connecting nearly every part of San Francisco with the wider region." <br>
+
 response: <br>
-{
-  "function": "meeting_room",
-  "time_used_percent": { "min": 0.4 },
-  "local_date": { "min": "2022-12-01", "max": "2022-12-31" }
-}
+```'questions': {
+    'text_answer': {
+      'question': 'What is the name of the city?',
+      'answer': 'San Francisco',
+    }, 
+    'multiple_choice': {
+      'question': 'How are the summer in San Francisco?',
+      'choices': ['cool','warm','hot','cold']
+    },
+    'matching': {
+      'question': 'Match the following',
+      'matching': [['Stonewall Inn','LGBTQ+ culture'],['Metropolitan Museum of Art','largest art museum'],['Governors Island','climate crisis']]
+    }
+}```
 
 ## Requirements
 An OpenAI API key (sign up at https://beta.openai.com/signup and create an api key at https://beta.openai.com/account/api-keys) <br>
