@@ -63,7 +63,7 @@ Now you can test the API:
 - with the frontend at http://127.0.0.1:5000
 - directly with curl like that:
 ```
-curl -H "Content-Type: application/json" -X POST --data '{"user_input": "Meeting room only"}' localhost:5000/json_filter
+curl -H "Content-Type: application/json" -X POST --data '{"user_input": "One of the top tourist destinations in the United States..."}' localhost:5000/json_filter
 ```
 
 ## Experiment directly with python interpreter:

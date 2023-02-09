@@ -41,7 +41,7 @@ Given a natural language input return three questions: a text answer question, a
                     },
                     'matching': {
                       'question': 'Match the following',
-                      'matching': [['Stonewall Inn','LGBTQ+ culture'],['Metropolitan Museum of Art','largest art museum'],['Governors Island','climate crisis']]
+                      'matching': [['San Francisco Giants','MLB'], ['Golden State Warriors','NBA'], ['Summers in San Francisco','cool']]
                     }
                 }
             }
