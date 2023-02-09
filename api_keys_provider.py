@@ -9,7 +9,7 @@ class OpenAIAPIKeysProvider(object):
     then all the others in OPEN_API_KEY_2, OPEN_API_KEY_3 ...
     """
 
-    api_keys_list = ['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']
+    api_keys_list = ['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']
     if 'OPENAI_API_KEY' in os.environ.keys():  # default api key
         api_keys_list.append(os.environ['OPENAI_API_KEY'])
     for i in range(2, 10):  # try to add additional api keys

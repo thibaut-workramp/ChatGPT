@@ -13,7 +13,7 @@ class JsonFilterBot(BaseTaskSolverBot):
         "text_answer", "multiple_choice", "matching"
     ]
 
-    def build_task_description(self, space_functions=None):
+    def build_task_description(self):
         task_description = f"""\
 We consider the following 'questions' dataset schema, with its fields description:
 

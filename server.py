@@ -28,14 +28,13 @@ def json_filter():
     if 'nl_query' not in data:
         raise ValueError('missing nl_query aparam')
     nl_query = data['nl_query']
-    space_functions = data.get('space_functions')
-    response = build_json_filter(nl_query, space_functions=space_functions)
+    response = build_json_filter(nl_query)
     logging.debug('*****************************************************')
     return response
 
 
-def build_json_filter(nl_query, space_functions=None):
-    response = bot(nl_query, space_functions=space_functions)
+def build_json_filter(nl_query):
+    response = bot(nl_query)
     return response
 
 
