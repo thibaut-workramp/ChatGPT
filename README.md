@@ -19,7 +19,7 @@ response: <br>
     },
     'matching': {
       'question': 'Match the following',
-      'matching': [['Stonewall Inn','LGBTQ+ culture'],['Metropolitan Museum of Art','largest art museum'],['Governors Island','climate crisis']]
+      'matching': [['San Francisco Giants','MLB'], ['Golden State Warriors','NBA'], ['Summers in San Francisco','cool']]
     }
   }
 }
@@ -63,7 +63,7 @@ Now you can test the API:
 - with the frontend at http://127.0.0.1:5000
 - directly with curl like that:
 ```
-curl -H "Content-Type: application/json" -X POST --data '{"user_input": "One of the top tourist destinations in the United States..."}' localhost:5000/json_filter
+curl -H "Content-Type: application/json" -X POST --data '{"nl_query": "One of the top tourist destinations in the United States..."}' localhost:5050/json_filter
 ```
 
 ## Experiment directly with python interpreter:
